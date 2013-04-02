@@ -61,12 +61,12 @@
 					nP.incrNavLevel();
 
 					// shift all nav elements over
-					$nav.children().find('a').removeClass('active').end().animate({
+					$nav.children().find('a').removeClass('navPanels-active').end().animate({
 						right: '+='+(nP.options.openWidth)
 					}, nP.options.animateDuration);
 
 					// make current nav links active
-					$('a', $navItem).addClass('active');
+					$('a', $navItem).addClass('navPanels-active');
 
 					// deactive all other nav triggers
 					nP.deactivateTriggers($nav);
@@ -197,7 +197,7 @@
 				$nav.animate({ right: 0 }, nP.options.animateDuration);
 
 				// make links active
-				$('a', $nav).addClass('active');
+				$('a', $nav).addClass('navPanels-active');
 
 				$(nP.options.rootNav).css({
 					position: 'fixed',
