@@ -76,7 +76,7 @@
 				});
 
 				// handle backwards nav clicks
-				$('.navPanels-back.active').click(function() {
+				$('.navPanels-back.navPanels-active').click(function() {
 					var $this = $(this),
 						$panel = $(nP.panelId),
 						$allNavs = $('nav', nP.navId),

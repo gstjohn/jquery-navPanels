@@ -71,7 +71,7 @@ header a {
 #root-nav { background: #066dab; }
 #about-subnav { background: #115b87; }
 #exec-subnav { background: #20465d; }
-.navPanels-trigger, .navPanels-trigger.active:hover {
+.navPanels-trigger, .navPanels-trigger.navPanels-active:hover {
 	background-image: url(../images/arrow.png);
 	background-position: 225px 17px;
 	background-repeat: no-repeat;
@@ -86,7 +86,7 @@ nav a {
 	color: #fff;
 }
 nav a:hover { text-decoration: none; }
-nav a.active:hover { background: #438bc1; }
+nav a.navPanels-active:hover { background: #438bc1; }
 nav ul {
 	list-style: none;
 }
